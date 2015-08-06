@@ -36,7 +36,7 @@ sudo easy_install3 pip
 #install docker
 wget -qO- https://get.docker.com/ | sh
 
-sudo usermod -aG docker ubuntu
+sudo usermod -aG docker `whoami`
 
 #powerline font install
 mkdir ~/.fonts
