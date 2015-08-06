@@ -52,10 +52,12 @@ Install Package(apt)
 * revolution-r
 * revolution-mkl
 * python-tk
+* python3-tk
 * python3-pyinotify
 * python3-keyring
 * python3-dev
 * python3-setuptools
+* oracle-java8-installer
 
 Install Package(pip)
 * pip

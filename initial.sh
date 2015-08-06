@@ -21,7 +21,8 @@ sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		pcmanx-gtk2 m4 automake autoconf vagrant valgrind \
 		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev yakuake \
 		ppa-purge libgmp-dev revolution-r revolution-mkl python-tk \
-		python3-pyinotify python3-keyring python3-dev python3-setuptools
+		python3-pyinotify python3-keyring python3-dev python3-setuptools \
+		python3-tk
 
 #pip install
 sudo pip install pip numpy
@@ -54,7 +55,7 @@ nvm install stable
 nvm alias default stable
 
 #install java
-sudo apt-get install -y oracle-java-installer
+sudo apt-get install -y oracle-java8-installer
 
 #install oh my zsh
 echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
