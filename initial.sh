@@ -14,13 +14,14 @@ done
 
 sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		gcc g++ clang-3.6 llvm-3.6 libclang-dev python-dev vlc \
-		ant deadbeef virt-manager \
+		ant deadbeef virt-manager  libgtk2.0-dev filezilla \
 		qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils \
 		build-essential binutils p7zip pbzip2 unzip qemu \
 	    libicu-dev python-setuptools libglew-dev libglewmx-dev \
 		pcmanx-gtk2 m4 automake autoconf vagrant valgrind \
 		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev yakuake \
-		ppa-purge libgmp-dev revolution-r revolution-mkl
+		ppa-purge libgmp-dev revolution-r revolution-mkl python-tk \
+		python3-pyinotify python3-keyring python3-dev python3-setuptools 
 
 pip install pip numpy
 
