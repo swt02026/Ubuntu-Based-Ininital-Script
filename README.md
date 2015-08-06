@@ -19,7 +19,7 @@ Install Package(apt)
 * python-dev
 * vlc
 * ant
-* deadbeef
+* deadbeef (may be not success install)
 * virt-manager
 * libgtk2.0-dev
 * filezilla
@@ -58,6 +58,7 @@ Install Package(apt)
 * python3-dev
 * python3-setuptools
 * oracle-java8-installer
+* python3-tk
 
 Install Package(pip)
 * pip
