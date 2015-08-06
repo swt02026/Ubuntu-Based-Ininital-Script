@@ -58,6 +58,6 @@ nvm alias default stable
 sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y deadbeef
 #install oh my zsh
-echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/swt02026/oh-my-zsh/master/tools/install.sh -O -)"
+#echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/swt02026/oh-my-zsh/master/tools/install.sh -O -)"
 
-cp ./.zshrc ~/
+#cp ./.zshrc ~/
