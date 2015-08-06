@@ -28,19 +28,19 @@ wget -qO- https://get.docker.com/ | sh
 
 sudo usermod -aG docker ubuntu
 
-mkdir ~/.fonts     
+mkdir ~/.fonts
 
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
 
 fc-cache -vf
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
-nvm install nvm 
+nvm install nvm
 
 nvm install stable
 
 nvm alias default stable
 
-sudo apt-get instal -y oracle-java-installer
+sudo apt-get install -y oracle-java-installer
 
 echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
