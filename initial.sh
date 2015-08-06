@@ -59,6 +59,14 @@ nvm install stable
 
 nvm alias default stable
 
+#remove default openjdk
+sudo apt-get remove openjdk*
+#remove default libreoffice
+sudo apt-get remove libreoffice*
+
 #install java
 sudo apt-get install -y oracle-java8-installer
+#install deadbeef
 sudo apt-get install -y deadbeef
+
+sudo apt-get autoremove

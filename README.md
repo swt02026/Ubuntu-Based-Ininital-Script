@@ -69,3 +69,7 @@ Install Package(other)
 * nvm
 * oh my zsh
 * ubuntu-mono-powerline-ttf
+
+Remove Package
+* libreoffice*
+* openjdk*
