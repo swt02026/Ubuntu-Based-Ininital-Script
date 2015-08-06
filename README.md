@@ -3,7 +3,7 @@ add ppa repo:
 * [starws-box/deadbeef-player](https://launchpad.net/~starws-box/+archive/ubuntu/deadbeef-player)
 * [ppa:webupd8team/java](https://launchpad.net/~webupd8team/+archive/ubuntu/java)
 
-Install Package
+Install Package(apt)
 * zsh
 * wget
 * curl
@@ -56,3 +56,13 @@ Install Package
 * python3-keyring
 * python3-dev
 * python3-setuptools
+
+Install Package(pip)
+* pip
+* requests
+
+Install Package(other)
+* docker
+* nvm
+* oh my zsh
+* ubuntu-mono-powerline-ttf
