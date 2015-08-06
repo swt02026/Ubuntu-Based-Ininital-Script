@@ -45,6 +45,11 @@ git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-m
 
 fc-cache -vf
 
+#install oh my zsh
+echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/swt02026/oh-my-zsh/master/tools/install.sh -O -)"
+
+cp ./.zshrc ~/
+
 #nvm install and update
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
@@ -57,7 +62,3 @@ nvm alias default stable
 #install java
 sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y deadbeef
-#install oh my zsh
-#echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/swt02026/oh-my-zsh/master/tools/install.sh -O -)"
-
-#cp ./.zshrc ~/
