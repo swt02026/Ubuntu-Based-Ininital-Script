@@ -34,7 +34,7 @@ sudo apt-get install build-essential libjpeg-dev libtiff5-dev \
 	   	libavformat-dev libswscale-dev
 
 sudo apt-get install zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
-	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy
+	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg
 
 #pip install
 sudo pip install pip
