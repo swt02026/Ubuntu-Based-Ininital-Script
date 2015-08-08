@@ -24,8 +24,21 @@ sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		python3-pyinotify python3-keyring python3-dev python3-setuptools \
 		python3-tk
 
+#opencv dependence
+sudo apt-get install build-essential libjpeg-dev libtiff5-dev \
+		libjasper-dev libopenexr-dev python-numpy \
+	   	libtbb-dev yasm libfaac-dev libopencore-amrnb-dev \
+	   	libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev \
+	   	libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common \
+	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
+	   	libavformat-dev libswscale-dev
+
+sudo apt-get install zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
+	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy
+
 #pip install
-sudo pip install pip numpy
+sudo pip install pip
+sudo pip install --upgrade numpy
 
 sudo pip install --upgrade virtualenv
 
