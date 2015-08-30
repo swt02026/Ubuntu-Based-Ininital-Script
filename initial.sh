@@ -3,11 +3,11 @@
 read -s PASSWORD
 
 echo $PASSWORD | sudo -S apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get dist-upgrade -y
 #add ppa
 sudo add-apt-repository -y ppa:starws-box/deadbeef-player
 sudo add-apt-repository -y ppa:webupd8team/java
-
+sudo  apt-get update
 #apt-install
 sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		gcc g++ clang-3.6 llvm-3.6 libclang-dev python-dev vlc \
@@ -22,7 +22,7 @@ sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		python3-tk wine1.6 winetricks wine-gecko2.21
 
 #opencv dependence
-sudo apt-get install build-essential libjpeg-dev libtiff5-dev \
+sudo apt-get install -y build-essential libjpeg-dev libtiff5-dev \
 		libjasper-dev libopenexr-dev python-numpy \
 	   	libtbb-dev yasm libfaac-dev libopencore-amrnb-dev \
 	   	libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev \
@@ -30,7 +30,7 @@ sudo apt-get install build-essential libjpeg-dev libtiff5-dev \
 	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
 	   	libavformat-dev libswscale-dev
 
-sudo apt-get install zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
+sudo apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg
 
 #pip install
@@ -63,7 +63,7 @@ cp ./.zshrc ~/
 #nvm install and update
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
-zsh
+source ~/.bashrc
 
 nvm install nvm
 
@@ -72,13 +72,13 @@ nvm install stable
 nvm alias default stable
 
 #remove default openjdk
-sudo apt-get remove openjdk*
+sudo apt-get remove -y openjdk*
 #remove default libreoffice
-sudo apt-get remove libreoffice*
+sudo apt-get remove -y libreoffice*
 
 #install java
 sudo apt-get install -y oracle-java8-installer
 #install deadbeef
 sudo apt-get install -y deadbeef
 
-sudo apt-get autoremove
+sudo apt-get autoremove -y
