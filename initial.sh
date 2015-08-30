@@ -28,7 +28,7 @@ sudo apt-get install -y build-essential libjpeg-dev libtiff5-dev \
 	   	libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev \
 	   	libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common \
 	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
-	   	libavformat-dev libswscale-dev
+	   	libavformat-dev libswscale-dev cmake-qt-gui
 
 sudo apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg
