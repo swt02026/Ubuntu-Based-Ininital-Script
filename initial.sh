@@ -63,6 +63,8 @@ cp ./.zshrc ~/
 #nvm install and update
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
+zsh
+
 nvm install nvm
 
 nvm install stable
