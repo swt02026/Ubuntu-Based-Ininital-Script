@@ -5,12 +5,9 @@ read -s PASSWORD
 echo $PASSWORD | sudo -S apt-get update
 sudo apt-get dist-upgrade
 #add ppa
-PPA=( "ppa:starws-box/deadbeef-player"
-	"ppa:webupd8team/java" )
+sudo add-apt-repository -y ppa:starws-box/deadbeef-player
+sudo add-apt-repository -y ppa:webupd8team/java
 
-for i in $PPA ; do
-	sudo add-apt-repository -y $i
-done
 #apt-install
 sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		gcc g++ clang-3.6 llvm-3.6 libclang-dev python-dev vlc \
@@ -22,7 +19,7 @@ sudo apt-get install -y zsh wget curl vim git ssh cmake \
 		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev yakuake \
 		ppa-purge libgmp-dev revolution-r revolution-mkl python-tk \
 		python3-pyinotify python3-keyring python3-dev python3-setuptools \
-		python3-tk
+		python3-tk wine1.6 winetricks wine-gecko2.21
 
 #opencv dependence
 sudo apt-get install build-essential libjpeg-dev libtiff5-dev \
