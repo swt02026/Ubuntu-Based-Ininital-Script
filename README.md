@@ -49,7 +49,6 @@ Install Package(apt)
 * libgl1-mesa-dev
 * libglu1-mesa-dev
 * freeglut3-dev
-* yakuake
 * ppa-purge
 * libgmp-dev
 * revolution-r
@@ -64,6 +63,10 @@ Install Package(apt)
 * python3-tk
 * clang-format-3.7
 * clang-modernize-3.7
+* libclang-common-3.7-dev
+* libllvm3.7
+* llvm-3.7-tools
+* llvm-3.7-dev
 
 Install Package(pip)
 * pip
