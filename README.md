@@ -13,8 +13,8 @@ Install Package(apt)
 * cmake
 * gcc
 * g++
-* clang-3.6
-* llvm-3.6
+* clang-3.7
+* llvm-3.7
 * libclang-dev
 * python-dev
 * vlc
@@ -65,7 +65,6 @@ Install Package(pip)
 * requests
 
 Install Package(other)
-* docker
 * nvm
 * oh my zsh
 * ubuntu-mono-powerline-ttf
