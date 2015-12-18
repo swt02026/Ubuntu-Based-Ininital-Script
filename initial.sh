@@ -67,6 +67,15 @@ nvm install stable
 
 nvm alias default stable
 
+echo $PASSWORD | sudo -S apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+echo $PASSWORD | sudo -S touch /etc/apt/sources.list.d/docker.list
+
+echo $PASSWORD | sudo -S bash -c 'echo "deb https://apt.dockerproject.org/repo ubuntu-wily main" > /etc/apt/sources.list.d/docker.list'
+
+echo $PASSWORD | sudo -S apt-get update
+
+echo $PASSWORD | sudo -S apt-get install docker-engine
 #remove default openjdk
 echo $PASSWORD | sudo -S apt-get remove -y openjdk*
 #remove default libreoffice

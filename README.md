@@ -76,6 +76,7 @@ Install Package(other)
 * nvm
 * oh my zsh
 * ubuntu-mono-powerline-ttf
+* docker
 
 Remove Package
 * libreoffice*
