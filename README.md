@@ -15,7 +15,8 @@ Install Package(apt)
 * g++
 * clang-3.7
 * llvm-3.7
-* libclang-dev
+* libclang-3.7-dev
+* libclang-common-3.7-dev
 * python-dev
 * vlc
 * ant
@@ -59,6 +60,8 @@ Install Package(apt)
 * python3-setuptools
 * oracle-java8-installer
 * python3-tk
+* clang-format-3.7
+* clang-modernize-3.7
 
 Install Package(pip)
 * pip
