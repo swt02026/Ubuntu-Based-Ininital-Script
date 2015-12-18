@@ -32,7 +32,7 @@ echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5
 
 echo $PASSWORD | sudo -S apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg clang-format-3.7 \
-		 clang-modernize-3.7
+		 clang-modernize-3.7 llvm-3.7-dev llvm-3.7-tools
 
 #pip install
 echo $PASSWORD | sudo -S pip install pip
