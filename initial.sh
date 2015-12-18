@@ -16,10 +16,10 @@ echo $PASSWORD | sudo -S apt-get install -y zsh wget curl vim git ssh cmake \
 		build-essential binutils p7zip pbzip2 unzip qemu \
 	    libicu-dev python-setuptools libglew-dev libglewmx-dev \
 		pcmanx-gtk2 m4 automake autoconf vagrant valgrind \
-		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev \
+		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev python-pip \
 		ppa-purge libgmp-dev revolution-r revolution-mkl python-tk \
 		python3-pyinotify python3-keyring python3-dev python3-setuptools \
-		python3-tk wine1.6 winetricks wine-gecko2.21 ia32-libs-multiarch
+		python3-tk wine1.6 winetricks wine-gecko2.21
 
 #opencv dependence
 echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5-dev \
