@@ -17,6 +17,8 @@ Install Package(apt)
 * llvm-3.7
 * libclang-3.7-dev
 * libclang-common-3.7-dev
+* llvm-3.7-tools
+* llvm-3.7-dev
 * python-dev
 * vlc
 * ant
