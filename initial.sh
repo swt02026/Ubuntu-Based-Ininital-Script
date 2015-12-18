@@ -43,11 +43,6 @@ echo $PASSWORD | sudo -S pip2 install requests
 
 echo $PASSWORD | sudo -S easy_install3 pip
 
-#install docker
-wget -qO- https://get.docker.com/ | sh
-
-echo $PASSWORD | sudo -S usermod -aG docker `whoami`
-
 #powerline font install
 mkdir ~/.fonts
 
@@ -63,7 +58,7 @@ cp ./.zshrc ~/
 #nvm install and update
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | zsh
 
-source ~/.bashrc
+. ~/.nvm/nvm.sh
 
 nvm install nvm
 
