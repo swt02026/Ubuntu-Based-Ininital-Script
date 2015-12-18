@@ -78,3 +78,8 @@ echo $PASSWORD | sudo -S apt-get install -y oracle-java8-installer oracle-java6-
 echo $PASSWORD | sudo -S apt-get install -y deadbeef
 
 echo $PASSWORD | sudo -S apt-get autoremove -y
+
+echo $PASSWORD | sudo -S adduser `whoami` kvm
+
+echo $PASSWORD | sudo -S adduser `whoami` libvirtd
+
