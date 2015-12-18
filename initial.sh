@@ -73,7 +73,7 @@ echo $PASSWORD | sudo -S apt-get remove -y openjdk*
 echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 
 #install java
-echo $PASSWORD | sudo -S apt-get install -y oracle-java8-installer
+echo $PASSWORD | sudo -S apt-get install -y oracle-java8-installer oracle-java6-installer  oracle-java8-set-default
 #install deadbeef
 echo $PASSWORD | sudo -S apt-get install -y deadbeef
 
