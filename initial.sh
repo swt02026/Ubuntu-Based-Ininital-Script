@@ -30,9 +30,11 @@ echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5
 	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
 	   	libavformat-dev libswscale-dev cmake-qt-gui at-spi2-core
 
-echo $PASSWORD | sudo -S apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
+echo $PASSWORD | sudo -S apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev gvfs-bin \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg clang-format-3.7 \
-		 clang-modernize-3.7 llvm-3.7-dev llvm-3.7-tools libllvm3.7 libclang-common-3.7-dev
+		 clang-modernize-3.7 llvm-3.7-dev llvm-3.7-tools libllvm3.7 libclang-common-3.7-dev \
+		 intltool libnotify-dev libclutter-gtk-1.0-dev libmx-dev libkeybinder-3.0-dev libgee-0.8-dev
+
 
 #pip install
 echo $PASSWORD | sudo -S pip install pip
