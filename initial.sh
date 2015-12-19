@@ -28,7 +28,7 @@ echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5
 	   	libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev \
 	   	libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common \
 	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
-	   	libavformat-dev libswscale-dev cmake-qt-gui
+	   	libavformat-dev libswscale-dev cmake-qt-gui at-spi2-core
 
 echo $PASSWORD | sudo -S apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg clang-format-3.7 \
@@ -76,6 +76,8 @@ echo $PASSWORD | sudo -S bash -c 'echo "deb https://apt.dockerproject.org/repo u
 echo $PASSWORD | sudo -S apt-get update
 
 echo $PASSWORD | sudo -S apt-get install docker-engine
+
+echo $PASSWORD | sudo -S service docker start
 #remove default openjdk
 echo $PASSWORD | sudo -S apt-get remove -y openjdk*
 #remove default libreoffice
@@ -91,4 +93,8 @@ echo $PASSWORD | sudo -S apt-get autoremove -y
 echo $PASSWORD | sudo -S adduser `whoami` kvm
 
 echo $PASSWORD | sudo -S adduser `whoami` libvirtd
+
+echo $PASSWORD | sudo -S adduser `whoami` docker
+
+
 
