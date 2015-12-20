@@ -85,6 +85,13 @@ echo $PASSWORD | sudo -S apt-get remove -y openjdk*
 #remove default libreoffice
 echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 
+#for ycmd
+cd  && wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py
+
+#for vim
+sh <(wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O -)
+cd ~/.vim/bundle && git clone https://github.com/Valloric/YouCompleteMe.git
+
 #install java
 echo $PASSWORD | sudo -S apt-get install -y oracle-java8-installer oracle-java6-installer  oracle-java8-set-default
 #install deadbeef
