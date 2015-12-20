@@ -19,7 +19,7 @@ echo $PASSWORD | sudo -S apt-get install -y zsh wget curl vim git ssh cmake \
 		libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev python-pip \
 		ppa-purge libgmp-dev revolution-r revolution-mkl python-tk \
 		python3-pyinotify python3-keyring python3-dev python3-setuptools \
-		python3-tk wine1.6 winetricks wine-gecko2.21 Alacarte
+		python3-tk Alacarte
 
 #opencv dependence
 echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5-dev \
@@ -92,10 +92,6 @@ cd  && wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_
 sh <(wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O -)
 cd ~/.vim/bundle && git clone https://github.com/Valloric/YouCompleteMe.git
 
-#install java
-echo $PASSWORD | sudo -S apt-get install -y oracle-java8-installer oracle-java6-installer  oracle-java8-set-default
-#install deadbeef
-echo $PASSWORD | sudo -S apt-get install -y deadbeef
 
 echo $PASSWORD | sudo -S apt-get autoremove -y
 
@@ -105,5 +101,4 @@ echo $PASSWORD | sudo -S adduser `whoami` libvirtd
 
 echo $PASSWORD | sudo -S adduser `whoami` docker
 
-
-
+sudo  apt-get install -y oracle-java8-installer oracle-java6-installer oracle-java8-set-default wine1.6 winetricks wine-gecko2.21
