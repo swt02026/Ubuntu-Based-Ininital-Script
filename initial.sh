@@ -86,7 +86,7 @@ echo $PASSWORD | sudo -S apt-get remove -y openjdk*
 echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 
 #for ycmd
-cd  && wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py
+cp ./.ycm_extra_conf.py ~/
 
 #for vim
 sh <(wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O -)
