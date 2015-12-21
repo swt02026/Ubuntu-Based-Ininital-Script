@@ -89,8 +89,12 @@ echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 cp ./.ycm_extra_conf.py ~/
 
 #for vim
-sh <(wget --no-check-certificate https://github.com/kaochenlong/eddie-vim/raw/master/utils/install.sh -O -)
-cd ~/.vim/bundle && git clone https://github.com/Valloric/YouCompleteMe.git
+git clone https://github.com/swt02026/.vim.git ~/.vim
+cd ~/.vim
+git submoudle init 
+git submodule update --init --recursive
+ln -s ~/.vim/vimrc ~/.vimrc
+cd
 
 
 echo $PASSWORD | sudo -S apt-get autoremove -y
