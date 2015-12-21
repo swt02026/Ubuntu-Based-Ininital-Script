@@ -99,4 +99,6 @@ echo $PASSWORD | sudo -S adduser `whoami` libvirtd
 
 echo $PASSWORD | sudo -S adduser `whoami` docker
 
+echo $PASSWORD | sudo -S usermod -aG docker `whoami`
+
 sudo  apt-get install -y oracle-java8-installer oracle-java6-installer oracle-java8-set-default wine1.6 winetricks wine-gecko2.21
