@@ -88,14 +88,18 @@ echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 #for ycmd
 cp ./.ycm_extra_conf.py ~/
 
-#for vim
+#for vim 
 git clone https://github.com/swt02026/.vim.git ~/.vim
 cd ~/.vim
 git submoudle init 
 git submodule update --init --recursive
 ln -s ~/.vim/vimrc ~/.vimrc
-cd
-
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer --system-libclang
+cd ~
+mkdir ycm_build
+cd ycm_build
+cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 
 echo $PASSWORD | sudo -S apt-get autoremove -y
 
