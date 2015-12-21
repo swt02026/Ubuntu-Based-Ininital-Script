@@ -100,6 +100,7 @@ cd ~
 mkdir ycm_build
 cd ycm_build
 cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+make -j4
 
 echo $PASSWORD | sudo -S apt-get autoremove -y
 
