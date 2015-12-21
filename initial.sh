@@ -87,7 +87,7 @@ echo $PASSWORD | sudo -S apt-get remove -y libreoffice*
 
 #for ycmd
 cp ./.ycm_extra_conf.py ~/
-
+cp ./.tern-project ~/
 #for vim 
 curl -o- https://raw.githubusercontent.com/swt02026/.vim/master/install.sh | bash
 
