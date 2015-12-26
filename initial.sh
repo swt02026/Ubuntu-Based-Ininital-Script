@@ -9,7 +9,7 @@ echo $PASSWORD | sudo -S add-apt-repository -y ppa:starws-box/deadbeef-player
 echo $PASSWORD | sudo -S add-apt-repository -y ppa:webupd8team/java
 echo $PASSWORD | sudo -S apt-get update
 #apt-install
-echo $PASSWORD | sudo -S apt-get install -y zsh wget curl vim git ssh cmake \
+echo $PASSWORD | sudo -S apt-get install -y --force-yes zsh wget curl vim git ssh cmake \
 		gcc g++ clang-3.7 llvm-3.7 libclang-3.7-dev python-dev vlc \
 		ant deadbeef virt-manager  libgtk2.0-dev filezilla \
 		qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils \
@@ -22,7 +22,7 @@ echo $PASSWORD | sudo -S apt-get install -y zsh wget curl vim git ssh cmake \
 		python3-tk Alacarte atool unrar
 
 #opencv dependence
-echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5-dev \
+echo $PASSWORD | sudo -S apt-get install -y --force-yes build-essential libjpeg-dev libtiff5-dev \
 		libjasper-dev libopenexr-dev python-numpy \
 	   	libtbb-dev yasm libfaac-dev libopencore-amrnb-dev \
 	   	libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev \
@@ -30,7 +30,7 @@ echo $PASSWORD | sudo -S apt-get install -y build-essential libjpeg-dev libtiff5
 	   	texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev \
 	   	libavformat-dev libswscale-dev cmake-qt-gui at-spi2-core
 
-echo $PASSWORD | sudo -S apt-get install -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev gvfs-bin \
+echo $PASSWORD | sudo -S apt-get install --force-yes -y zlib1g-dev libwebp-dev libpng-dev libgdal-dev gvfs-bin \
 	   	 libxine2-dev libeigen3-dev python3-dev python3-numpy ffmpeg clang-format-3.7 \
 		 clang-modernize-3.7 llvm-3.7-dev llvm-3.7-tools libllvm3.7 libclang-common-3.7-dev \
 		 intltool libnotify-dev libclutter-gtk-1.0-dev libmx-dev libkeybinder-3.0-dev libgee-0.8-dev
@@ -70,6 +70,8 @@ nvm install stable
 nvm alias default stable
 
 echo $PASSWORD | sudo -S apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+echo $PASSWORD | sudo -S apt-get update
 
 echo $PASSWORD | sudo -S touch /etc/apt/sources.list.d/docker.list
 
