@@ -107,5 +107,14 @@ cd
 
 git clone https://github.com/horst3180/Arc-theme.git
 
+cd Arc-theme/ 
+
+./autogen.sh --prefix=/usr --disable-light --disable-cinnamon --disable-metacity --disable-unity
+
+echo $PASSWORD | sudo -s make install
+
+cd
+
 git clone https://github.com/dglava/arc-openbox.git
+
 sudo  apt-get install -y oracle-java8-installer oracle-java6-installer oracle-java8-set-default wine1.6 winetricks wine-gecko2.21
