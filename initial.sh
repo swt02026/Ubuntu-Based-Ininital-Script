@@ -59,7 +59,7 @@ echo "$PASSWORD\n" | sh -c "$(wget https://raw.github.com/swt02026/oh-my-zsh/mas
 cp ./.zshrc ~/
 
 #nvm install and update
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | zsh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
 . ~/.nvm/nvm.sh
 
